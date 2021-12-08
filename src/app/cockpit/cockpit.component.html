@@ -1,0 +1,24 @@
+<div class="row mb-3">
+    <div class="col-xs-12">
+        <h3>Add New Server or BluePrint</h3>
+        <div class="mb-2">
+            <label for="servername" class="form-label">Name</label>
+            <!-- using Two way data binding for data transfer -->
+            <input type="text" name="servername" class="form-control" [(ngModel)]="newServerName">
+            <!-- Data transfer using Local Reference , u can loacl reference anywhere in the template bt not in typescript -->
+            <!-- <input type="text" name="servername" class="form-control" #serverNameInput> -->
+        </div>
+        <div class="mb-2">
+            <label for="servercontent" class="form-label">Content</label>
+            <input type="text" name="servercontent" class="form-control" [(ngModel)]="newServerContent">
+        </div>
+    </div>
+</div>
+<div class=" row mb-3">
+    <div class="col-xs-12 ">
+        <button type="submit " class="btn btn-success mx-2 " (click)="onAddServer() ">Add Server</button>
+        <!-- Passind local reference -->
+        <!-- <button type="submit " class="btn btn-success mx-2 " (click)="onAddServer(serverNameInput) ">Add Server</button> -->
+        <button type="submit " class="btn btn-primary mx-2 " (click)="onAddBlueprint()">Add BluePrint</button>
+    </div>
+</div>

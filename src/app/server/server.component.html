@@ -1,0 +1,10 @@
+<div class="card mb-2">
+    <div class="card-body">
+        <div class="card-title" [ngStyle]="{'color': element.type === 'server' ? 'red' : 'blue'}">
+            <h4>{{ element.name }}</h4>
+        </div>
+        <div class="card-text">
+            {{ element.content }}
+        </div>
+    </div>
+</div>
